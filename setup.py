@@ -7,7 +7,6 @@ REQUIRED_PACKAGES = [
     'stemming',
     'nltk',
     'setuptools',
-    'PyML',
     'scrapy',
     'scikit-learn==0.20.4']
 PACKAGE_NAME='Sentence_Polarity'                        # model folder name
