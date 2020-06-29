@@ -8,7 +8,7 @@ REQUIRED_PACKAGES = [
     'nltk',
     'setuptools',
     'scrapy',
-    'scikit-learn==0.20.4']
+    'scikit-learn']
 PACKAGE_NAME='Sentence_Polarity'                        # model folder name
 PACKAGE_DESCRIPTION='Sentence_Polarity python 3 claire'     # model folder name
 setup(name=PACKAGE_NAME,
