@@ -15,7 +15,7 @@ import os
 import sys
 import pickle
 import nltk.corpus, nltk.tag, itertools
-from Sentence_Polarity.terminal_colors import Tcolors
+from terminal_colors import Tcolors
 
 class SequentialTagger:
     """

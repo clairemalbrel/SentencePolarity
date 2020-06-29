@@ -14,8 +14,8 @@
 import re
 import sys
 import pickle
-from Sentence_Polarity.terminal_colors import Tcolors
-from Sentence_Polarity.pb_classifiers import PbSubj
+from terminal_colors import Tcolors
+from pb_classifiers import PbSubj
 
 class Bootstrapping:
     """

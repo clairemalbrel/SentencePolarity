@@ -20,7 +20,7 @@ from PyML import svm, ker, featsel
 from PyML.containers.vectorDatasets import SparseDataSet, VectorDataSet
 from PyML.classifiers.composite import Chain, FeatureSelect
 from scrapy.conf import settings
-from Sentence_Polarity.terminal_colors import Tcolors
+from terminal_colors import Tcolors
 from PyML.classifiers.svm import loadSVM
 
 class SvmClassifier:

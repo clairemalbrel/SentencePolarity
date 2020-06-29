@@ -15,7 +15,7 @@ from __future__ import division
 import nltk
 import string
 import sys
-from Sentence_Polarity.terminal_colors import Tcolors
+from terminal_colors import Tcolors
 from stemming.porter2 import stem
 sys.path.append(sys.path[0] + "/../")
 
