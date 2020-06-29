@@ -9,8 +9,8 @@ REQUIRED_PACKAGES = [
     'setuptools',
     'scrapy',
     'scikit-learn']
-PACKAGE_NAME='Sentence_Polarity'                        # model folder name
-PACKAGE_DESCRIPTION='Sentence_Polarity python 3 claire'     # model folder name
+PACKAGE_NAME='SentencePolarity'                        # model folder name
+PACKAGE_DESCRIPTION='SentencePolarity python 3 claire'     # model folder name
 setup(name=PACKAGE_NAME,
     version='1.0',
     install_requires=REQUIRED_PACKAGES,
