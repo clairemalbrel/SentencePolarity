@@ -15,7 +15,7 @@ import os
 import sys
 import pickle
 import nltk.corpus, nltk.tag, itertools
-from terminal_colors import Tcolors
+from SentencePolarity.terminal_colors import Tcolors
 
 class SequentialTagger:
     """
@@ -28,13 +28,13 @@ class SequentialTagger:
     """
     def __init__(self):
 
-        self.filename = "stored/ubt_tagger.classifier"
+        self.filename = "/tmp/ubt_tagger.classifier"
         try:
             self.ubt_tagger = pickle.load(open(self.filename))
             print( Tcolors.ADD + Tcolors.OKBLUE + " Loaded existing UBT tagger!" + Tcolors.ENDC )
         except:
             print( Tcolors.ACT + Tcolors.RED + " Existing UBT tagger not found." + Tcolors.ENDC)
-            print( "Path:",  "stored/ubt_tagger.classifier")
+            print( "Path:",  "/tmp/ubt_tagger.classifier")
             print( "Training...")
             brown_review_all = nltk.corpus.brown.tagged_sents()
             brown_review_sents = nltk.corpus.brown.tagged_sents(categories=['reviews'])

@@ -16,7 +16,7 @@ import sys
 import nltk
 import random
 import datetime
-from terminal_colors import Tcolors
+from SentencePolarity.terminal_colors import Tcolors
 sys.path.append(os.path.abspath("") + "/../")
 
 class PbSubj:

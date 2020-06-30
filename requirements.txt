@@ -6,3 +6,6 @@ nltk
 setuptools
 scrapy
 scikit-learn
+textblob
+vaderSentiment
+memoized_property

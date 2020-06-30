@@ -20,7 +20,7 @@ b_flag = False
 
 positives = {} #{"word1":{"typ":"", "pos1":"", "priorpolarity":}}
 negatives = {} #{"word1":{"type":"", "pos1":"", "priorpolarity":}}
-emoticons_file = open("datasets/emoticons.data","r")
+emoticons_file = open(f"{os.path.dirname(__file__)}/emoticons.data","r")
 lines = emoticons_file.readlines()
 
 def patch_emoticons():

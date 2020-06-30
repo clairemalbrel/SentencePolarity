@@ -8,11 +8,18 @@ REQUIRED_PACKAGES = [
     'nltk',
     'setuptools',
     'scrapy',
+    'vaderSentiment',
     'scikit-learn']
 PACKAGE_NAME='SentencePolarity'                        # model folder name
 PACKAGE_DESCRIPTION='SentencePolarity python 3 claire'     # model folder name
 setup(name=PACKAGE_NAME,
     version='1.0',
+    package_data={
+        # If any package contains *.txt or *.rst files, include them:
+        "": ["*.data", "*.csv", "*.txt", "*.tff", "*.classifier", 'lexicon'],
+        # And include any *.msg files found in the "hello" package, too:
+        #"hello": ["*.msg"],
+    },
     install_requires=REQUIRED_PACKAGES,
     packages=find_packages(),
     include_package_data=True,

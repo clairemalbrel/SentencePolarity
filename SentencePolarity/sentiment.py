@@ -15,12 +15,12 @@ import os
 import sys
 import nltk
 import pickle
-from bootstrapping import Bootstrapping
-from pos import SequentialTagger
-from hp_classifiers import HpObj, HpSubj
-from polarity import PolarityClassifier
-from replacer import RepeatReplacer
-from terminal_colors import Tcolors
+from SentencePolarity.bootstrapping import Bootstrapping
+from SentencePolarity.pos import SequentialTagger
+from SentencePolarity.hp_classifiers import HpObj, HpSubj
+from SentencePolarity.polarity import PolarityClassifier
+from SentencePolarity.replacer import RepeatReplacer
+from SentencePolarity.terminal_colors import Tcolors
 import pandas as pd
 import traceback
 

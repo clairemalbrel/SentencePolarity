@@ -14,8 +14,8 @@
 import re
 import sys
 import pickle
-from terminal_colors import Tcolors
-from pb_classifiers import PbSubj
+from SentencePolarity.terminal_colors import Tcolors
+from SentencePolarity.pb_classifiers import PbSubj
 
 class Bootstrapping:
     """
@@ -57,7 +57,7 @@ class Bootstrapping:
                                           ["BE","VBN","IN"],
                                           ["TO","VB","TO"]]
                                 }
-        self.filename = "stored/learned_patterns"
+        self.filename = "/tmp/learned_patterns"
         try:
             self.learned_patterns = pickle.load(open(self.filename))
             print( Tcolors.ADD + Tcolors.OKBLUE + " Loaded existing pattern knowledge!" + Tcolors.ENDC )

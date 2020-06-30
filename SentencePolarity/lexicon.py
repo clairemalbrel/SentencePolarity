@@ -14,7 +14,7 @@
 import pickle
 import os
 import sys
-from datasets.emoticons_patch import patch_emoticons
+from SentencePolarity.datasets.emoticons_patch import patch_emoticons
 
 class Lexicon:
     """
@@ -25,7 +25,7 @@ class Lexicon:
     """
 
     def __init__(self):
-        self.filename =  "stored/lexicon"
+        self.filename =  "/tmp/lexicon"
         try:
             self.words = pickle.load(open(self.filename))
         except:
@@ -39,7 +39,7 @@ class Lexicon:
             The method loads the annotated corpus and extracts the structure
             with easy access for the classifiers.
         """
-        dictionary_file = open("datasets/subjclueslen1-HLTEMNLP05.tff","r")
+        dictionary_file = open(f"{os.path.dirname(__file__)}/datasets/subjclueslen1-HLTEMNLP05.tff","r")
         lines = dictionary_file.readlines()
 
         for line in lines:
